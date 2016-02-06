@@ -1,0 +1,7 @@
+<% if session[:login_name].nil? %>
+  <div><%= link_to "Log in", login_path %></div>
+<% else %>
+  <%= session[:login_name] %>
+  <div><%= link_to "Log out", logout_path %></div>
+  <div><%= link_to "Show projects", '#' %></div>
+<% end %>
