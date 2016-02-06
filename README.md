@@ -48,4 +48,5 @@ Step3: Add functions to login to Glue
         color: red;
       }
       ````
+
 Step4: Run `rails server`
