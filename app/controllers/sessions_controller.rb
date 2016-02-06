@@ -20,7 +20,10 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    auth_token = session[:auth_token]
     delete_session
-    redirect_to login_path
+    response = glue_logout auth_token
+    puts "[Logout Response] [#{response.code}] #{response.message}: #{response.body}"
+    redirect_to root_path
   end
 end
