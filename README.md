@@ -1,11 +1,21 @@
 # BIM360Glue_RubyOnRails_Basic
 Ruby on Rails example on how to use web services of Autodesk BIM 360 Glue to login.
 
-## Steps:
+## Prerequisition
+* Install Ruby and Rails from http://railsinstaller.org
+* Run `rails -v` to make sure rails installed successfully
+
+## How to run:
+* Clone this repository
+* Run `bundle install` to install all dependencies
+* Run `rails s` to start the web server
+* Browse to `http://localhost:3000`
+
+if you want to see how Glue API is called, you can refer to this file directly: [app/helpers/application_helper.rb](https://github.com/lushibi/BIM360Glue_RubyOnRails_Basic/blob/master/app/helpers/application_helper.rb)
+
+## How to create this project from scratch:
 
 Step1: Install and try
-* Install Ruby and Rails from http://railsinstaller.org
-* Run `rails -v` to check rails installed successfully
 * Run `rails new BIM360Glue_RubyOnRails_Basic` to create a new rails app
 * Run `cd <YourCodeDirectory> && bundle install`, note: this step may be executed automatically by the previous command
 * Run `rails s`
@@ -18,7 +28,7 @@ Step2: Change default home page
   * app/assets/javascripts/welcome.js.coffee - javascript written in [coffeescript](http://coffeescript.org/), which will be compiled into application.js
   * app/assets/stylesheets/welcome.css.scss - css written in [sass](http://sass-lang.com/), which will be compiled into application.css
 * Open the file `config/routes.rb` in your editor, uncomment this line `# root 'welcome#index'`
-* Run `rails s` and browser to `http://localhost:3000` again, you will see the home page changed to what you just created
+* Run `rails s` and browser to `http://localhost:3000` again, you will see the home page changed to what you've just created
 
 Step3: Add functions to login to Glue
 * Copy `app/helpers/application_helper.rb` from this github to your local folder, and modify credential information `CREDENTIALS_API_KEY`, `CREDENTIALS_API_SECRET`, `CREDENTIALS_COMPANY_ID` with your own api_key, api_secret and company_id, this file also defines login url and a function named `glue_login` which is used to login to Glue
@@ -48,3 +58,4 @@ Step3: Add functions to login to Glue
         color: red;
       }
       ````
+Step4: Run `rails server`
