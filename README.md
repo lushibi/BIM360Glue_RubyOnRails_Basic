@@ -65,4 +65,4 @@ Step4: Run `rails server`
 
 ## Screenshots:
 
-![Login](https://github.com/lushibi/BIM360GlueRubyOnRails_Basic/blob/master/login.png "Login")
+![Login](https://github.com/lushibi/BIM360Glue_RubyOnRails_Basic/blob/master/login.png "Login")
