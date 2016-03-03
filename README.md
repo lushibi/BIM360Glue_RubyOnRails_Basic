@@ -1,6 +1,8 @@
 # BIM360Glue_RubyOnRails_Basic
 Ruby on Rails example on how to use web services of Autodesk BIM 360 Glue to login.
 
+For a more comprehensive example, please see [BIM360GlueRubyOnRails_WebService_DisplayComponent_Basic](https://github.com/lushibi/BIM360GlueRubyOnRails_WebService_DisplayComponent_Basic), which demonstrates how to query project information, model information and use Glue 3d model viewer.
+
 ## Prerequisition
 * Install Ruby and Rails from http://railsinstaller.org
 * Run `rails -v` to make sure rails installed successfully
@@ -59,3 +61,8 @@ Step3: Add functions to login to Glue
       }
       ````
 Step4: Run `rails server`
+
+
+## Screenshots:
+
+![Login](https://github.com/lushibi/BIM360GlueRubyOnRails_Basic/blob/master/login.png "Login")
